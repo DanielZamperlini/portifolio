@@ -1,0 +1,47 @@
+main {
+  background: url(/img/NUVEM.png) no-repeat;
+  padding-left: 60px;
+  background-size: cover;
+  h1 {
+    @include tipo-2(42);
+    padding: 60px 0 30px 0;
+    span {
+      color: $cor-3;
+    }
+  }
+  p {
+    @include tipo-3(24);
+    padding-bottom: 20px;
+  }
+  ul {
+    padding-bottom: 30px;
+  }
+  button {
+    padding: 12px 90px 12px 90px;
+    background: $cor-3;
+    color: $cor-2;
+    @include tipo-2(18);
+    border-radius: 6px;
+    border-color: $cor-5;
+    margin-bottom: 120px;
+    a {
+      color: $cor-2;
+      text-decoration: none;
+      padding: 5px 30px;
+    }
+  }
+  button:hover {
+    border-color: $cor-4;
+    background: $cor-4;
+    transition: ease-out 1ms;
+  }
+}
+
+.links-contact {
+  display: flex;
+  align-items: center;
+  gap: $gutter;
+  a img {
+    width: 50px;
+  }
+}

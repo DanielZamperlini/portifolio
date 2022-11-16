@@ -1,0 +1,42 @@
+header {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  img {
+    max-width: 250px;
+    margin-bottom: 10px;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    li a {
+      text-decoration: none;
+      list-style: none;
+      padding: 6px 20px;
+      color: $cor-2;
+      @include tipo-2(18);
+      border-radius: 6px;
+      border:2px solid $cor-5;
+      background: $cor-3;
+      @include d(s) {
+        padding: 0;
+        color: $cor-3;
+        @include tipo-2(18);
+        border: none;
+        background: $cor-2;
+      }
+    }
+    a:hover {
+      color: $cor-4;
+      transition: ease-out 1ms;
+    }
+   
+  }
+}
+

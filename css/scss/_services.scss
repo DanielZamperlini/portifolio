@@ -1,0 +1,49 @@
+.services {
+  h2 {
+    text-align: center;
+    @include tipo-2(36);
+    padding-bottom: 60px;
+  }
+  h3 {
+    @include tipo-3(24);
+    color: $cor-3;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .type-services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    div {
+      display: grid;
+      justify-items: center;
+      background: $cor-6;
+      max-width: 400px;
+      padding: 20px 10px;
+      h3 {
+        @include tipo-1(18);
+        padding: 0;
+      }
+      p {
+        @include tipo-3(18);
+        padding: 0;
+      }
+    }
+    @include d(m) {
+      flex-direction: column;
+      align-items: center;
+      div {
+        width: 100%;
+      }
+    }
+    @include d(s) {
+      flex-direction: column;
+      align-items: center;
+      div {
+        width: 100%;
+      }
+    }
+  }
+}

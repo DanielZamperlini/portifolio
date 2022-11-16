@@ -1,0 +1,90 @@
+// Cores
+$cor-1: #000000;
+$cor-2: #fff;
+$cor-3: #5222d0;
+$cor-4: #ec615b;
+$cor-5: #d5d5d5;
+$cor-6: #efefef;
+
+// Fontes
+$fonte-1: "Roboto", sans-serif;
+$fonte-2: "Titan One", cursive;
+$fonte-3: Arial, Helvetica, sans-serif;
+
+@function em($pixel, $contexto: 16) {
+  @return $pixel / $contexto + em;
+}
+
+@mixin tipo-1($size) {
+  font-family: $fonte-1;
+  @if $size == 18 {
+    font-size: em(18);
+    line-height: em(30, 18);
+  } @else if $size == 24 {
+    font-size: em(24);
+    line-height: em(30, 24);
+  } @else if $size == 32 {
+    font-size: em(32);
+    line-height: em(34, 32);
+  } @else if $size == 36 {
+    font-size: em(36);
+    line-height: em(40, 36);
+  } @else if $size == 42 {
+    font-size: em(42);
+    line-height: em(50, 42);
+  } @else if $size == 48 {
+    font-size: em(48);
+    line-height: em(60, 48);
+  }
+}
+@mixin tipo-2($size) {
+  font-family: $fonte-2;
+  @if $size == 18 {
+    font-size: em(18);
+    line-height: em(30, 18);
+  } @else if $size == 24 {
+    font-size: em(24);
+    line-height: em(30, 24);
+  } @else if $size == 32 {
+    font-size: em(32);
+    line-height: em(34, 32);
+  } @else if $size == 36 {
+    font-size: em(36);
+    line-height: em(40, 36);
+  } @else if $size == 42 {
+    font-size: em(42);
+    line-height: em(50, 42);
+  } @else if $size == 48 {
+    font-size: em(48);
+    line-height: em(60, 48);
+  }
+  
+}
+@mixin tipo-3($size) {
+  font-family: $fonte-3;
+  @if $size == 18 {
+    font-size: em(18);
+    line-height: em(30, 18);
+  } @else if $size == 24 {
+    font-size: em(24);
+    line-height: em(30, 24);
+  } @else if $size == 32 {
+    font-size: em(32);
+    line-height: em(34, 32);
+  } @else if $size == 36 {
+    font-size: em(36);
+    line-height: em(40, 36);
+  } @else if $size == 42 {
+    font-size: em(42);
+    line-height: em(50, 42);
+  } @else if $size == 48 {
+    font-size: em(48);
+    line-height: em(60, 48);
+  }
+}
+
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
