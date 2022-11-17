@@ -1,5 +1,5 @@
 main {
-  background: url(img/NUVEM.png) no-repeat;
+  background: url('/img/NUVEM.png') no-repeat;
   padding-left: 60px;
   background-size: cover;
   h1 {
@@ -24,6 +24,10 @@ main {
     border-radius: 6px;
     border-color: $cor-5;
     margin-bottom: 120px;
+    @include d(s){
+      padding: 12px 40px 12px 40px;
+      margin-bottom: 30px;
+    }
     a {
       color: $cor-2;
       text-decoration: none;

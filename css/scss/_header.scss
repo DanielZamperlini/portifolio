@@ -22,12 +22,12 @@ header {
       color: $cor-2;
       @include tipo-2(18);
       border-radius: 6px;
-      border:2px solid $cor-5;
+      border: 2px solid $cor-5;
       background: $cor-3;
       @include d(s) {
+        font-size: 0.85rem;
         padding: 0;
         color: $cor-3;
-        @include tipo-2(18);
         border: none;
         background: $cor-2;
       }
@@ -36,7 +36,5 @@ header {
       color: $cor-4;
       transition: ease-out 1ms;
     }
-   
   }
 }
-
