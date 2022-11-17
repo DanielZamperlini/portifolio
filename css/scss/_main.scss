@@ -39,6 +39,9 @@ main {
     background: $cor-4;
     transition: ease-out 1ms;
   }
+  @include d(s) {
+    padding-left: 20px;
+  }
 }
 
 .links-contact {
