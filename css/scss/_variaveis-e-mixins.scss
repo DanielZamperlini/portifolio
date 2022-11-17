@@ -5,6 +5,7 @@ $cor-3: #5222d0;
 $cor-4: #ec615b;
 $cor-5: #d5d5d5;
 $cor-6: #efefef;
+$cor-7: #44ccee;
 
 // Fontes
 $fonte-1: "Roboto", sans-serif;
@@ -58,7 +59,6 @@ $fonte-3: Arial, Helvetica, sans-serif;
     font-size: em(48);
     line-height: em(60, 48);
   }
-  
 }
 @mixin tipo-3($size) {
   font-family: $fonte-3;
