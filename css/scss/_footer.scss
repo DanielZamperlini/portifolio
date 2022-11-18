@@ -1,8 +1,9 @@
 footer {
+  background: linear-gradient(180deg, $cor-2 5%, $cor-7 100%);
   h2 {
     @include tipo-2(36);
     text-align: center;
-    padding: 30px;
+    padding-top: 60px;
   }
   .container-footer {
     display: flex;

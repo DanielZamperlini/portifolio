@@ -1,4 +1,5 @@
 .about {
+  background: linear-gradient(180deg, $cor-7 20%, $cor-2 100%);
   h1 {
     text-align: center;
     @include tipo-2(36);
